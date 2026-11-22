@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria | PHP Bartenders</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../imagens/Logo PHP.jpg" type="image/jpeg" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="../imagens/Logo PHP.jpg" alt="Logo PHP Bartenders" />
+        </a>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="serviços.html">Serviços</a>
+        <a href="galeria.html" class="ativo">Galeria</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- BANNER DA PÁGINA -->
+      <section class="hero-interna">
+        <div class="hero-interna-conteudo">
+          <span class="tag-topo">Portfólio & Momentos</span>
+          <h1>Nossa <span>Galeria</span> de Eventos</h1>
+          <p>
+            Confira registros reais de celebrações marcadas pela elegância, apresentação impecável e drinks inesquecíveis.
+          </p>
+        </div>
+      </section>
+
+      <!-- GALERIA COM FILTROS -->
+      <section class="galeria-secao">
+        <h2>Momentos Que Marcam Época</h2>
+        <p>Explore as fotos por categoria ou veja todos os nossos destaques.</p>
+
+        <!-- FILTROS INTERATIVOS EM CSS PURO -->
+        <input type="radio" name="filtro" id="filtro-todos" checked class="radio-filtro" />
+        <input type="radio" name="filtro" id="filtro-torre" class="radio-filtro" />
+        <input type="radio" name="filtro" id="filtro-welcome" class="radio-filtro" />
+        <input type="radio" name="filtro" id="filtro-alta" class="radio-filtro" />
+        <input type="radio" name="filtro" id="filtro-degustacao" class="radio-filtro" />
+
+        <div class="filtros-galeria">
+          <label for="filtro-todos" class="btn-filtro">Todos</label>
+          <label for="filtro-torre" class="btn-filtro">Torre de Taças</label>
+          <label for="filtro-welcome" class="btn-filtro">Welcome Drinks</label>
+          <label for="filtro-alta" class="btn-filtro">Alta Coquetelaria</label>
+          <label for="filtro-degustacao" class="btn-filtro">Degustação</label>
+        </div>
+
+        <!-- GRID DE IMAGENS -->
+        <div class="grid-galeria-completa" id="galeria-grid">
+          <!-- Item 1 -->
+          <div class="item-galeria" data-categoria="torre">
+            <img src="../imagens/torre.jpeg" alt="Torre de taças em casamento" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Brinde com Estilo</span>
+              <h4>Torre de Taças Iluminada</h4>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="item-galeria" data-categoria="alta">
+            <img src="../imagens/alta.jpeg" alt="Preparo de drink artesanal com espuma" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Alta Mixologia</span>
+              <h4>Coquetelaria Autoral</h4>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="item-galeria" data-categoria="welcome">
+            <img src="../imagens/welcome.jpeg" alt="Welcome drinks para recepção de convidados" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Recepção</span>
+              <h4>Welcome Drinks Refrescantes</h4>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="item-galeria" data-categoria="degustacao">
+            <img src="../imagens/Shots & Criações Exclusivas.jpeg" alt="Taças servidas em sessão de degustação" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Degustação</span>
+              <h4>Shots & Criações Exclusivas</h4>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="item-galeria" data-categoria="alta">
+            <img src="../imagens/Drinks classicos e autorais.jpeg" alt="Barman finalizando coquetel com guarnição de especiarias" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Detalhes & Finalização</span>
+              <h4>Drinks Clássicos & Autorais</h4>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="item-galeria" data-categoria="welcome">
+            <img src="../imagens/chegada.jpeg" alt="Apresentação do balcão de welcome drinks" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Hospitalidade</span>
+              <h4>Experiência na Chegada</h4>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="item-galeria" data-categoria="torre">
+            <img src="../imagens/torre.jpeg" alt="Cascata de espumante na torre de taças" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Celebração</span>
+              <h4>Cascata de Taças de Cristal</h4>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="item-galeria" data-categoria="degustacao">
+            <img src="../imagens/degustação personalizaa.jpeg" alt="Seleção de coquetéis personalizados para noivos" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Cardápio Sob Medida</span>
+              <h4>Harmonização de Sabores</h4>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="item-galeria" data-categoria="alta">
+            <img src="../imagens/atendimento.jpeg" alt="Balcão de alta coquetelaria em pleno atendimento" />
+            <div class="item-galeria-overlay">
+              <span class="tag">Open Bar</span>
+              <h4>Atendimento Impecável no Bar</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS DE CLIENTES -->
+      <section class="depoimentos-secao">
+        <h2>O Que Dizem Nossos Clientes</h2>
+        <p>A satisfação de quem confiou o brinde do seu sonho à PHP Bartenders.</p>
+
+        <div class="depoimentos-grid">
+          <div class="card-depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>
+              "A torre de taças foi o ponto alto do brinde do nosso casamento! Todos os convidados ficaram encantados com a agilidade dos bartenders e a qualidade dos drinks. Nota 10!"
+            </p>
+            <div>
+              <div class="autor">Mariana & Felipe</div>
+              <div class="evento-tipo">Casamento em Piracicaba - SP</div>
+            </div>
+          </div>
+
+          <div class="card-depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>
+              "Contratamos a PHP para nossa confraternização de fim de ano corporativa. Pontualidade britânica, postura profissional exemplar e uma carta de coquetéis que superou as expectativas."
+            </p>
+            <div>
+              <div class="autor">Carlos Eduardo M.</div>
+              <div class="evento-tipo">Evento Corporativo (180 convidados)</div>
+            </div>
+          </div>
+
+          <div class="card-depoimento">
+            <div class="estrelas">★★★★★</div>
+            <p>
+              "Os welcome drinks sem álcool para os adolescentes e a alta coquetelaria para os adultos fizeram toda a diferença no aniversário de 15 anos da minha filha. Recomendo de olhos fechados!"
+            </p>
+            <div>
+              <div class="autor">Beatriz Silveira</div>
+              <div class="evento-tipo">Festa de 15 Anos</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE ORÇAMENTO / CTA -->
+      <section class="orcamento">
+        <h2>Gostou dos nossos momentos?</h2>
+        <p>
+          Vamos criar registros tão incríveis quanto esses no seu próprio evento.
+        </p>
+        <a href="contato.html" class="botao">
+          Solicitar orçamento
+        </a>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="../imagens/Logo PHP.jpg" alt="Logo PHP Bartenders" />
+          <p>Elevamos o nível do seu sonho.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Navegação</h3>
+          <a href="index.html">Início</a>
+          <a href="serviços.html">Serviços</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="sobre.html">Sobre nós</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-contato">
+          <h3>Contato</h3>
+          <p>WhatsApp (19) 99999-9999</p>
+          <p>Instagram @phpbartenders</p>
+          <p>Piracicaba - SP</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 PHP Bartenders - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
